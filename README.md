@@ -1,2 +1,2 @@
 # bot
-bot
+My first bot
