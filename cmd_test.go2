@@ -15,3 +15,5 @@ var (
 channel     string
 	replies     chan string
 	cmdError    chan string
+user        *User
+	msgs        []string
