@@ -17,3 +17,4 @@ channel     string
 	cmdError    chan string
 user        *User
 	msgs        []string
+errs        []string
