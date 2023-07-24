@@ -18,3 +18,4 @@ channel     string
 user        *User
 	msgs        []string
 errs        []string
+protoParams interface{}
