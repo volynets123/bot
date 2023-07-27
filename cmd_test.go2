@@ -24,3 +24,4 @@ protoParams interface{}
 const (
 expectedMsg    = "msg"
 	cmd            = "cmd"
+cmdDescription = "Command description"
