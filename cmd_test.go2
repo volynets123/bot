@@ -25,3 +25,5 @@ const (
 expectedMsg    = "msg"
 	cmd            = "cmd"
 cmdDescription = "Command description"
+cmdExampleArgs = "arg1 arg2"
+)
