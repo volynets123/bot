@@ -31,3 +31,4 @@ cmdExampleArgs = "arg1 arg2"
 func waitMessages(t *testing.T, count int, errorCount int) {
 for {
 		select {
+case reply := <-replies:
