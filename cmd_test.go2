@@ -32,3 +32,5 @@ func waitMessages(t *testing.T, count int, errorCount int) {
 for {
 		select {
 case reply := <-replies:
+msgs = append(msgs, reply)
+		case err := <-cmdError:
