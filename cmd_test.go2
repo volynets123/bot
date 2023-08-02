@@ -34,3 +34,5 @@ for {
 case reply := <-replies:
 msgs = append(msgs, reply)
 		case err := <-cmdError:
+errs = append(errs, err)
+		case <-time.After(1 * time.Second):
