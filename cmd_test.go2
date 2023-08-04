@@ -37,3 +37,5 @@ msgs = append(msgs, reply)
 errs = append(errs, err)
 		case <-time.After(1 * time.Second):
 t.Error("Timeout waiting for messages")
+t.Errorf("msgs received: %v", msgs)
+			t.Errorf("errs received: %v", errs)
