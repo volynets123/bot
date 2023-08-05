@@ -39,3 +39,5 @@ errs = append(errs, err)
 t.Error("Timeout waiting for messages")
 t.Errorf("msgs received: %v", msgs)
 			t.Errorf("errs received: %v", errs)
+t.Fatal()
+		}
