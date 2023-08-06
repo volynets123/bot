@@ -41,3 +41,5 @@ t.Errorf("msgs received: %v", msgs)
 			t.Errorf("errs received: %v", errs)
 t.Fatal()
 		}
+if len(msgs) == count && len(errs) == errorCount {
+			return
