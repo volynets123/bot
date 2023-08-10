@@ -48,3 +48,5 @@ if len(msgs) == count && len(errs) == errorCount {
 }
 
 func responseHandler(target string, message string, sender *User) {
+channel = target
+	user = sender
