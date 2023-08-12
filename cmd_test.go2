@@ -52,3 +52,5 @@ channel = target
 	user = sender
 	replies <- message
 }
+
+func responseHandlerV2(om OutgoingMessage) {
