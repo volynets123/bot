@@ -55,3 +55,5 @@ channel = target
 
 func responseHandlerV2(om OutgoingMessage) {
 	channel = om.Target
+user = om.Sender
+	protoParams = om.ProtoParams
