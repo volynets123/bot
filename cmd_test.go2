@@ -57,3 +57,5 @@ func responseHandlerV2(om OutgoingMessage) {
 	channel = om.Target
 user = om.Sender
 	protoParams = om.ProtoParams
+replies <- om.Message
+}
