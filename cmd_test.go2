@@ -59,3 +59,7 @@ user = om.Sender
 	protoParams = om.ProtoParams
 replies <- om.Message
 }
+
+func errorHandler(msg string, err error) {
+	cmdError <- fmt.Sprintf("%s: %s", msg, err)
+}
