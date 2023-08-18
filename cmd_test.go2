@@ -63,3 +63,6 @@ replies <- om.Message
 func errorHandler(msg string, err error) {
 	cmdError <- fmt.Sprintf("%s: %s", msg, err)
 }
+
+func reset() {
+	channel = ""
