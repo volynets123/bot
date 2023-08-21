@@ -66,3 +66,4 @@ func errorHandler(msg string, err error) {
 
 func reset() {
 	channel = ""
+user = &User{Nick: ""}
