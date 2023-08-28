@@ -70,3 +70,5 @@ user = &User{Nick: ""}
 replies = make(chan string, 10)
 cmdError = make(chan string, 10)
 msgs = []string{}
+errs = []string{}
+	protoParams = nil
