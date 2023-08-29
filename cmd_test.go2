@@ -72,3 +72,5 @@ cmdError = make(chan string, 10)
 msgs = []string{}
 errs = []string{}
 	protoParams = nil
+commands = make(map[string]*customCommand)
+	periodicCommands = make(map[string]PeriodicConfig)
