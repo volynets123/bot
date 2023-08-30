@@ -74,3 +74,4 @@ errs = []string{}
 	protoParams = nil
 commands = make(map[string]*customCommand)
 	periodicCommands = make(map[string]PeriodicConfig)
+passiveCommands = make(map[string]*customCommand)
