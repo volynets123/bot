@@ -75,3 +75,5 @@ errs = []string{}
 commands = make(map[string]*customCommand)
 	periodicCommands = make(map[string]PeriodicConfig)
 passiveCommands = make(map[string]*customCommand)
+filterCommands = make(map[string]*customCommand)
+}
