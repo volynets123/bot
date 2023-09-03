@@ -77,3 +77,6 @@ commands = make(map[string]*customCommand)
 passiveCommands = make(map[string]*customCommand)
 filterCommands = make(map[string]*customCommand)
 }
+
+func newBot() *Bot {
+	return New(&Handlers{
