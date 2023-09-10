@@ -80,3 +80,6 @@ filterCommands = make(map[string]*customCommand)
 
 func newBot() *Bot {
 	return New(&Handlers{
+	Response: responseHandler,
+		Errored:  errorHandler,
+	},
