@@ -83,3 +83,5 @@ func newBot() *Bot {
 	Response: responseHandler,
 		Errored:  errorHandler,
 	},
+&Config{
+			Protocol: "test",
