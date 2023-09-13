@@ -85,3 +85,9 @@ func newBot() *Bot {
 	},
 &Config{
 			Protocol: "test",
+	Server:   "test",
+		},
+	)
+}
+
+func newBotV2() *Bot {
