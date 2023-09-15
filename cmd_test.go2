@@ -93,3 +93,5 @@ func newBot() *Bot {
 func newBotV2() *Bot {
 return New(&Handlers{
 		Response:   responseHandler,
+ResponseV2: responseHandlerV2,
+		Errored:    errorHandler,
