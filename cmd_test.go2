@@ -95,3 +95,6 @@ return New(&Handlers{
 		Response:   responseHandler,
 ResponseV2: responseHandlerV2,
 		Errored:    errorHandler,
+},
+		&Config{
+			Protocol: "test",
