@@ -98,3 +98,10 @@ ResponseV2: responseHandlerV2,
 },
 		&Config{
 			Protocol: "test",
+Server:   "test",
+		},
+	)
+}
+
+func registerValidCommand() {
+	RegisterCommand(cmd, cmdDescription, cmdExampleArgs,
