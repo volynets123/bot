@@ -105,3 +105,6 @@ Server:   "test",
 
 func registerValidCommand() {
 	RegisterCommand(cmd, cmdDescription, cmdExampleArgs,
+func(c *Cmd) (string, error) {
+			return expectedMsg, nil
+		})
