@@ -108,3 +108,8 @@ func registerValidCommand() {
 func(c *Cmd) (string, error) {
 			return expectedMsg, nil
 		})
+}
+
+func TestPeriodicCommands(t *testing.T) {
+	reset()
+	RegisterPeriodicCommand("morning",
