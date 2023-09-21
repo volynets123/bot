@@ -113,3 +113,5 @@ func(c *Cmd) (string, error) {
 func TestPeriodicCommands(t *testing.T) {
 	reset()
 	RegisterPeriodicCommand("morning",
+PeriodicConfig{
+			CronSpec: "0 08 * * mon-fri",
