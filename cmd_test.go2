@@ -130,3 +130,10 @@ Channels: []string{"#channel"},
 }
 	if entries[0].Next.Hour() != 8 {
 		t.Fatal("Cron job should be scheduled to 8am")
+}
+
+	entries[0].Job.Run()
+
+	waitMessages(t, 1, 0)
+
+	if msgs[0] != "ok #channel" {
