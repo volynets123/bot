@@ -153,3 +153,7 @@ RegisterPeriodicCommand("morning",
 &Config{Protocol: "test", Server: "test"},
 	)
 	defer b.Close()
+
+	entries := b.cron.Entries()
+	if len(entries) != 1 {
+		t.Fatal("Should have one cron job entry")
