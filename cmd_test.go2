@@ -163,3 +163,7 @@ RegisterPeriodicCommand("morning",
 	}
 
 	entries[0].Job.Run()
+
+	waitMessages(t, 1, 0)
+
+	if msgs[0] != "ok #channel" {
