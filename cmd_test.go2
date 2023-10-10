@@ -185,3 +185,13 @@ Channels: []string{"#channel"},
 	defer b.Close()
 
 	entries := b.cron.Entries()
+
+	if len(entries) != 1 {
+		t.Fatal("Should have one cron job entry")
+	}
+
+	entries[0].Job.Run()
+	waitMessages(t, 0, 1)
+
+	if len(msgs) != 0 {
+		t.Error("Should not have a reply in the channel")
