@@ -195,3 +195,12 @@ Channels: []string{"#channel"},
 
 	if len(msgs) != 0 {
 		t.Error("Should not have a reply in the channel")
+}
+	if len(errs) != 1 {
+		t.Error("Expected 1 error")
+	}
+}
+
+func TestPeriodicCommandsV2(t *testing.T) {
+	reset()
+	RegisterPeriodicCommandV2("morning",
