@@ -204,3 +204,5 @@ Channels: []string{"#channel"},
 func TestPeriodicCommandsV2(t *testing.T) {
 	reset()
 	RegisterPeriodicCommandV2("morning",
+PeriodicConfig{
+			CronSpec: "0 08 * * mon-fri",
