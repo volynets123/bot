@@ -235,3 +235,5 @@ func TestMultiplePeriodicCommands(t *testing.T) {
 reset()
 	RegisterPeriodicCommand("morning",
 		PeriodicConfig{
+	CronSpec: "0 08 * * mon-fri",
+			Channels: []string{"#channel"},
