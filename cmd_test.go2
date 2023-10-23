@@ -246,3 +246,5 @@ CmdFunc:  func(channel string) (string, error) { return "ok " + channel, nil },
 	defer b.Close()
 
 	entries := b.cron.Entries()
+if len(entries) != 1 {
+		t.Fatal("Should have one cron job entry")
