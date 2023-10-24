@@ -248,3 +248,6 @@ CmdFunc:  func(channel string) (string, error) { return "ok " + channel, nil },
 	entries := b.cron.Entries()
 if len(entries) != 1 {
 		t.Fatal("Should have one cron job entry")
+}
+	if entries[0].Next.Hour() != 8 {
+		t.Fatal("Cron job should be scheduled to 8am")
