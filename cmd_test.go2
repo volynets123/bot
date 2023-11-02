@@ -269,3 +269,5 @@ reset()
 			Channels: []string{"#channel"},
 CmdFunc:  func(channel string) (string, error) { return "ok " + channel, nil },
 		})
+b := New(
+		&Handlers{Response: responseHandler},
