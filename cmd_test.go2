@@ -271,3 +271,6 @@ CmdFunc:  func(channel string) (string, error) { return "ok " + channel, nil },
 		})
 b := New(
 		&Handlers{Response: responseHandler},
+&Config{Protocol: "test", Server: "test"},
+	)
+	defer b.Close()
