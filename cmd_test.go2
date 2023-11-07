@@ -292,3 +292,5 @@ b := New(
 	}
 }
 func TestMultiplePeriodicCommands(t *testing.T) {
+reset()
+	RegisterPeriodicCommand("morning",
