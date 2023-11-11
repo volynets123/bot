@@ -301,3 +301,6 @@ Channels: []string{"#channel"},
 })
 	b := New(
 		&Handlers{Response: responseHandler},
+&Config{Protocol: "test", Server: "test"},
+	)
+	defer b.Close()
