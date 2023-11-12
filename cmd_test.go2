@@ -304,3 +304,6 @@ Channels: []string{"#channel"},
 &Config{Protocol: "test", Server: "test"},
 	)
 	defer b.Close()
+
+	entries := b.cron.Entries()
+	if len(entries) != 1 {
