@@ -322,3 +322,5 @@ Channels: []string{"#channel"},
 	}
 }
 func TestMultiplePeriodicCommands(t *testing.T) {
+	reset()
+	RegisterPeriodicCommand("morning",
