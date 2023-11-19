@@ -328,3 +328,6 @@ func TestMultiplePeriodicCommands(t *testing.T) {
 			CronSpec: "0 08 * * mon-fri",
 Channels: []string{"#channel"},
 			CmdFunc:  func(channel string) (string, error) { return "ok " + channel, nil },
+	})
+	b := New(
+		&Handlers{Response: responseHandler},
