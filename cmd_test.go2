@@ -348,3 +348,7 @@ if len(entries) != 1 {
 	waitMessages(t, 1, 0)
 
 	if msgs[0] != "ok #channel" {
+	t.Fatal("Invalid reply")
+	}
+}
+func TestMultiplePeriodicCommands(t *testing.T) {
