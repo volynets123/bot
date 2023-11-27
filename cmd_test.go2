@@ -352,3 +352,5 @@ if len(entries) != 1 {
 	}
 }
 func TestMultiplePeriodicCommands(t *testing.T) {
+reset()
+	RegisterPeriodicCommand("morning",
