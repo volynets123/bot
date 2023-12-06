@@ -382,3 +382,7 @@ t.Fatal("Cron job should be scheduled to 8am")
 	}
 }
 func TestMultiplePeriodicCommands(t *testing.T) {
+	reset()
+	RegisterPeriodicCommand("morning",
+		PeriodicConfig{
+			CronSpec: "0 08 * * mon-fri",
